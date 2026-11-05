@@ -1,0 +1,29 @@
+import Link from "next/link";
+      const mockURL = ["https://horhsyw8d5.ufs.sh/f/PyRFevZavQAqPwRdmOZavQAqz08Cg5IDdYVt6sNZFi3ucyoS","https://horhsyw8d5.ufs.sh/f/PyRFevZavQAqgbgDQdIUOhJSney7x9ZjRdEYqPvVrKWw1kAB","https://horhsyw8d5.ufs.sh/f/PyRFevZavQAqKXFa5BdP3Y8Q5mqJOIeFHZEvNnfCRDG9iVSy","https://horhsyw8d5.ufs.sh/f/PyRFevZavQAqFRm6UYWhtXvcBRUENqbGxyjW3Q6Yf7pw9KZi","https://horhsyw8d5.ufs.sh/f/PyRFevZavQAq65hgIy87jKQGYikl4SPMuzAC3OnegDNIE05T"]
+      const mockImages = mockURL.map((url, index) => ({
+        id: index + 1,
+        url,
+      }));
+export default function HomePage() {
+  return (
+    // bg-gradient-to-b from-[#2e026d] to-[#15162c]
+    <main className="flex min-h-screen flex-col items-center justify-center text-white bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpIzwlxk0Ia76cM0wYxivJ-3pstKLkdcwbdbjOEZS8DA&s=10)]">
+      <p>
+        Cancer Isreal
+      </p>
+      <div className=" bg-scroll ...">
+</div>
+    <div className = "flex flex-wrap gap-10">{
+    mockImages.map((image) => (
+      <div key ={image.id} className = "w-48">
+        <img src= {image.url} alt = "image" />
+      </div>
+    ))
+  }
+  </div>
+  <p>
+    Four score and seven years ago, our fathers brought forth on this contenent a new nation, concieved in liberty and deticated to the proposition that all men are created equal.
+  </p>
+    </main>
+  );
+}
