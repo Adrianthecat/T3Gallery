@@ -1,0 +1,7 @@
+export default function Layer2Page() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center text-white bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQMA7Lr7rEuZ3MX0cAAneRttsMF1fqU0ruCw_oG9DaQ&s=10)]">
+        (When in the course of human events, our fathers brought for on this contenent a new nation. Concieved in liberty and deticated to the propasition that all men are created equal.)
+    </main>
+  );
+}
