@@ -18,8 +18,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${geist.variable}`}>
+        <div className="w-full"> Da Home Page</div>
+        {children}
+      </body>
     </html>
   );
 }
+
